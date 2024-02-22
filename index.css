@@ -1,0 +1,114 @@
+@font-face {
+    font-family: outfit;
+    src: url(/assets/fonts/outfit/static/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: youngserif;
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+.attribution {
+    font-size: 13px; 
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+:root{
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose-white: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-grey: hsl(30, 18%, 87%);
+    --Wenge-brown: hsl(30, 10%, 34%);
+    --Dark-charcoal: hsl(24, 5%, 18%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: outfit;
+}
+body{
+    background-color: var(--Eggshell);
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 900px;
+    margin-inline: auto;
+}
+.container div:not(:first-child)
+{
+    padding: 1.5rem;
+}
+.container h1{
+    margin-bottom: 15px;
+}
+.pt{
+    width: 0 auto;
+    background: var(--Rose-white);
+}
+.heading h1{
+    color: var(--Dark-charcoal);
+}
+.pt h3{
+    color: var(--Dark-raspberry);
+    margin-bottom: 1rem;
+    padding-right: 8rem;
+}
+p,li{
+    line-height: 1.5;
+    color: var(--Wenge-brown);
+}
+h1,h2{
+    color: var(--Nutmeg);
+    font-family: youngserif;
+    letter-spacing: 0.05rem;
+}
+ul,ol{
+    padding-left: 20px;
+}
+li{
+    margin-top: 0.5rem;
+}
+.ins{
+    border-top: 2px solid hsl(30, 18%, 87%);
+    border-bottom: 2px solid hsl(30, 18%, 87%);
+}
+.nut li{
+    list-style: none;
+    padding: 0;
+}
+.nut p{
+    margin-top: 1rem;
+}
+.nut ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 0.5rem 0;
+}
+.nut ul li:last-child{
+    border-bottom: none;
+}
+@media (min-width: 768px){
+    .container{
+        margin:5rem auto 0;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    img{
+        border-radius: 1rem;
+    }
+    .heading{
+      font-size: 36px;
+    }
+}
